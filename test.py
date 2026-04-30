@@ -14,7 +14,7 @@ st.title("📊 Dashboard - MongoDB Atlas (sample_analytics)")
 # -----------------------------
 @st.cache_resource
 def get_data():
-    uri =  st.secrets["mongo"]["url"]
+    uri =  "mongodb+srv://claudiobances03_db_user:<Eduardoesgey1.>@cluster0.kdlp2af.mongodb.net/"
     client = MongoClient(uri)
 
     db = client["sample_analytics"]
